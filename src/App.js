@@ -14,8 +14,6 @@ function App() {
       });
   }, []);
 
-  console.log(items);
-
   return (
     <div className="container">
       <main className="main">
@@ -24,7 +22,6 @@ function App() {
           {items.map((obj, i) => (
             <div key={i} className="item">
               <img src={obj.url} alt="poke-img" />
-              <img src={obj.url} alt="" />
               <p>{obj.name}</p>
             </div>
           ))}
